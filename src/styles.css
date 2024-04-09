@@ -1,4 +1,131 @@
 /* src/styles.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+  .navbar {
+    @apply w-[80%] m-auto h-1 bg-[#ddd];
+  }
+  .describe-heading-parent {
+    @apply flex items-center flex-col gap-10;
+  }
+  .describe-component {
+    @apply flex gap-10 md:py-2 md:pr-52 md:pl-8 rounded-md ring-1 ring-gray-200;
+  }
+  .describe-sub-components {
+    @apply flex md:gap-10 max-sm:gap-2 px-4 py-2 justify-start items-center;
+  }
+  .describe-sub-components img {
+    @apply h-10 max-sm:h-5;
+  }
+  .describe-sub-components p {
+    @apply max-sm:text-[0.5rem];
+  }
+  .describe-sub-components p span {
+    @apply text-gray-500 max-md:hidden;
+  }
+
+  .describe-heading {
+    @apply flex items-center text-center mx-4 flex-col gap-5;
+  }
+  .describe-heading h2 {
+    @apply text-[2rem] font-semibold max-md:text-[1.2rem];
+  }
+  .describe-heading p {
+    @apply text-gray-600 max-md:text-[0.6rem];
+  }
+
+  .most-popular {
+    @apply relative top-[-10px] max-md:top-[65px] left-[300px] max-md:left-[100px] max-md:p-1 w-fit h-min rounded-full px-4 py-2 bg-yellow-400 z-10;
+  }
+
+  .most-popular-parent {
+    @apply flex justify-center gap-10 max-md:flex-col max-md:w-full md:mr-[200px];
+  }
+  .most-popular p {
+    @apply uppercase text-[0.6rem] font-bold text-nowrap;
+  }
+
+  .box {
+    @apply flex justify-between items-center ring-1 ring-gray-400 p-4 gap-10 rounded-md max-md:m-4;
+  }
+  .box-child {
+    @apply flex w-48;
+  }
+  .box-child p {
+    @apply text-[0.6rem];
+  }
+  .box-child p span {
+    @apply font-semibold;
+  }
+  .box-image {
+    @apply w-40 max-md:w-24;
+  }
+  .maths-parent {
+    @apply md:h-[80dvh] flex justify-center items-center;
+  }
+  .maths {
+    @apply flex justify-center flex-col items-center gap-16;
+  }
+  .maths-child {
+    @apply text-center flex flex-col gap-5;
+  }
+  .maths-child h1 {
+    @apply text-[2rem] font-semibold max-md:text-[1.2rem];
+  }
+  .maths-child p {
+    @apply text-gray-600 max-md:text-[0.6rem];
+  }
+  .maths-parent-box {
+    @apply flex md:gap-10 max-md:flex-col max-sm:gap-2;
+  }
+  .maths-parent-box p:nth-child(3) {
+    @apply text-gray-400;
+  }
+  .maths-box {
+    @apply ring-1 ring-gray-400 hover:ring-yellow-600 w-52 rounded-md flex justify-center items-center flex-col p-2;
+  }
+  .circle-parent {
+    @apply flex justify-center items-center h-[100dvh];
+  }
+  .circle {
+    @apply flex justify-center items-center flex-col text-center;
+  }
+  .circle h3 {
+    @apply text-[2rem] w-[80%] max-md:text-[1.2rem];
+  }
+  .rightplace-parent-component {
+    @apply flex flex-col justify-center items-center;
+  }
+  .rightplace-component {
+    @apply flex h-[80dvh] max-md:flex-col max-md:gap-10 w-full justify-center items-center md:p-20;
+  }
+  .rightplace-component-heading {
+    @apply md:w-[37%] flex flex-col justify-center max-md:text-center md:gap-10;
+  }
+  .rightplace-component-heading h1 {
+    @apply text-[2rem] font-semibold max-md:text-[1.2rem];
+  }
+  .rightplace-component-image {
+    @apply flex flex-col gap-5 justify-center max-md:items-center;
+  }
+  .rightplace-component-para {
+    @apply text-[1rem] max-md:text-[0.6rem] max-md:text-center max-md:mx-10;
+  }
+  .learning {
+    @apply flex flex-col gap-10 justify-center items-center;
+  }
+  .learning-child {
+    @apply text-center;
+  }
+  .learning-child h3 {
+    @apply text-[2rem] w-full max-md:text-[1.2rem];
+  }
+  .learning-child p {
+    @apply max-md:text-[0.6rem] text-gray-400;
+  }
+  .btn {
+    @apply px-12 py-3  text-white rounded-md hover:bg-gray-200 bg-black;
+  }
+}
