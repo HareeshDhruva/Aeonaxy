@@ -23,7 +23,7 @@
     @apply max-sm:text-[0.5rem];
   }
   .describe-sub-components p span {
-    @apply text-gray-500 max-md:hidden;
+    @apply text-gray-500;
   }
 
   .describe-heading {
@@ -99,7 +99,7 @@
     @apply flex flex-col justify-center items-center;
   }
   .rightplace-component {
-    @apply flex h-[80dvh] max-md:flex-col max-md:gap-10 w-full justify-center items-center md:p-20;
+    @apply flex h-[75dvh] max-md:flex-col max-md:gap-10 w-full justify-center items-center md:p-20;
   }
   .rightplace-component-heading {
     @apply md:w-[37%] flex flex-col justify-center max-md:text-center md:gap-10;
