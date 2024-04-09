@@ -1,14 +1,11 @@
 import React from "react";
 import Button from "./button";
 import Navbar from "./Navbar";
-import { useContext } from "react";
-import { ProgressContext } from "../context/progressContest";
 
 const Rightplace = ({ data, path }) => {
-  const { progress } = useContext(ProgressContext);
   return (
     <>
-      <Navbar progress={progress} />
+      <Navbar/>
       <div className="rightplace-parent-component">
         <div className="rightplace-component">
           <div className="flex justify-center">

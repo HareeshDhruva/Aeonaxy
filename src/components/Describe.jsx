@@ -1,14 +1,11 @@
 import Button from "./button";
 import Navbar from "./Navbar";
-import { useContext } from "react";
-import { ProgressContext } from "../context/progressContest";
 import "../styles.css";
 
 const Describe = ({ heading, subHeading, data, path }) => {
-  const { progress } = useContext(ProgressContext);
   return (
     <>
-      <Navbar progress={progress} />
+      <Navbar />
       <div className="describe-heading-parent">
         <div className="describe-heading">
           <h2>{heading}</h2>

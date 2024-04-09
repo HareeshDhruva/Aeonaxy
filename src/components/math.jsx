@@ -1,13 +1,10 @@
 import Button from "./button";
 import Navbar from "./Navbar";
-import { useContext } from "react";
-import { ProgressContext } from "../context/progressContest";
 
 const Math = ({ heading, subHeading, data, path }) => {
-  const { progress } = useContext(ProgressContext);
   return (
     <>
-      <Navbar progress={progress} />
+      <Navbar/>
       <div className="maths-parent">
         <div className="maths">
           <div className="maths-child">

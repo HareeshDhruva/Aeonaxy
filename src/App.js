@@ -12,11 +12,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Rightplace from "./components/rightplace";
 import Math from "./components/math";
 import Recomandation from "./components/recomandation";
-import ProgressContextProvider from "./context/progressContest";
 
 function App() {
   return (
-    <ProgressContextProvider>
       <BrowserRouter>
         <Routes>
           <Route
@@ -66,7 +64,6 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
-    </ProgressContextProvider>
   );
 }
 
