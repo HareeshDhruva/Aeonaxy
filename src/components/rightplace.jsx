@@ -19,7 +19,7 @@ const Rightplace = ({ data, path }) => {
               )}
               <p className="rightplace-component-para">{data.para}</p>
               {data.author !== null && (
-                <p className="italic font-medium">{data.author}</p>
+                <p className="author">{data.author}</p>
               )}
             </div>
           </div>
